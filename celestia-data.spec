@@ -36,7 +36,6 @@ models and planet textures for Celestia to work.
 
 %files -f %{name}.lang
 %doc README
-%license COPYING
 %{_datadir}/celestia/data
 %{_datadir}/celestia/extras-standard
 %{_datadir}/celestia/models
