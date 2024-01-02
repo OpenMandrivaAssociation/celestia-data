@@ -11,13 +11,13 @@ Summary:        Data, models and textures for Celestia
 License:        GPL-2.0-or-later AND CC-BY-SA-4.0 AND JPL-image
 URL:            https://celestiaproject.space/
 # data download from here: https://github.com/CelestiaProject/CelestiaContent/
-Source0: CelestiaContent-20240101.tar.gz
+Source0: CelestiaContent-%{git}.tar.gz
  
 BuildArch:      noarch
  
 BuildRequires:  cmake
 BuildRequires:  gettext
-Requires:       celestia-common = %{ver}
+Requires:       celestia-common
 
 %description
 This package provides the required data files, spacecraft
