@@ -22,18 +22,18 @@ Requires:       celestia-common = %{ver}
 %description
 This package provides the required data files, spacecraft
 models and planet textures for Celestia to work.
- 
- 
+
+%prep
 %autosetup -n CelestiaContent-%{git} -p1
 
 %build
 %cmake
 %make_build
- 
+
 %install
 %make_install -C build
 %find_lang %{name} --all-name
- 
+
 %files -f %{name}.lang
 %doc README
 %license COPYING
